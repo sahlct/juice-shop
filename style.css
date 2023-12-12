@@ -138,9 +138,11 @@ h2{
     border-radius: 50%;
 } */
 .card1{
-    min-width: 600px;
+    width: 500px;
     height: 80px;
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 .photo{
     width: 80px;
@@ -151,7 +153,7 @@ h2{
     height: 100%;
     border-radius: 50%;
 }
-.rate{
+.name{
    flex: 1;
    display: flex;
     justify-content: space-around;
@@ -163,6 +165,11 @@ h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px 0px;
-    margin-top: 50px;
+    gap: 25px 100px;
+    margin: 50px 0px;
 }
+.rate{
+    width: 80px;
+    height: 100%;
+}
+
