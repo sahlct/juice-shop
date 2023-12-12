@@ -8,7 +8,10 @@
     100% {
       transform: translateY(0);
     }
-  }  
+  } 
+*{
+    transition: opacity 0.3s ease, height 0.3s ease;
+  } 
 body{
     margin: 0;
     height: 100%;
@@ -41,4 +44,125 @@ body{
 .homebtn{
     width: 200px;
     height: 40px;
+}
+#gallery{
+    background-color: #f7f7f7;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    padding-top: 70px;
+}
+.main-glr{
+    margin: 20px 0px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px 0px;
+}
+#gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    /* transition: transform 0.3s ease; */
+}.card-content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.9);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    display: none;
+    transition: all .2s linear;
+    /* overflow: hidden; */
+  }
+  /* .card:hover img{
+    opacity: 0.2;
+  } */
+  .card:hover .card-content {
+    opacity: 1;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.8);
+    border-radius: 10px;
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+  }
+  .default-text{
+    color: black;
+  }
+  .default-text,
+  .default-button {
+  margin: 0;
+}
+
+.card:hover .default-text {
+  display: none; /* Hide default text on hover */
+}
+
+.card:hover .default-button {
+  display: none; /* Hide default button on hover */
+}
+
+/* Add styles for the new text and button */
+.card-content p,
+.card-content button {
+  display: none; /* Initially hide new text and button */
+}
+
+.card:hover .card-content p,
+.card:hover .card-content button {
+  display: block; /* Show new text and button on hover */
+}
+/* .menu-image{
+    max-width: 60px;
+    max-height: 50px;
+    border-radius: 50%;
+} */
+.card1{
+    min-width: 600px;
+    height: 80px;
+    display: flex;
+}
+.photo{
+    width: 80px;
+    height: 100%;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.rate{
+   flex: 1;
+   display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px 0px;
+    margin-top: 50px;
 }
