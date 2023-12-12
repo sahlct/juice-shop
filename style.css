@@ -1,0 +1,44 @@
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }  
+body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+#home{
+   background-image: url(https://img.freepik.com/premium-photo/flat-lay-composition-with-citrus-fruits-leaves-flowers-white-background-copy-space-banner_370312-155.jpg?w=2000); 
+   background-size: cover;
+   /* transform: rotate(180deg); */
+   min-height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+}
+.logo{
+    border-radius: 50%;
+    width: 350px;
+    animation: float 2s linear infinite;
+}
+.homeleft{
+    display: grid;
+    place-items: center;
+}
+.homeright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.homebtn{
+    width: 200px;
+    height: 40px;
+}
