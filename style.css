@@ -172,4 +172,71 @@ h2{
     width: 80px;
     height: 100%;
 }
+#time{
+    background-color: #f7f7f7;
+}
+.time-main{
+    margin: 30px 100px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.leftbar{
+    background-image: url(https://www.alphafoodie.com/wp-content/uploads/2021/11/Apple-Juice-Square.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 0px 0px 20px;
+    min-width: 500px;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.rightbar{
+    background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148810353.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702252800&semt=ais);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 20px 20px 0px;
+    min-width: 500px;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hour{
+    width: 70%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#contact{
+    padding: 0;
+}
+footer{
+    margin-top: 50px;
+    height: 150px;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 
