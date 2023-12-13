@@ -258,10 +258,10 @@ tr{
 }
 .leftbar h1{
   color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 60px;
-    font-weight: 600;
-    text-shadow: 5px 6px 10px rgba(0, 0, 0,1);
+  font-family: 'Nunito', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  text-shadow: 5px 6px 10px rgba(0, 0, 0,1);
 }
 .rightbar{
   transition: transform 0.5s ease;
@@ -329,6 +329,10 @@ tr{
   .homebtn{
     align-self: center;
     
+  }
+  .leftbar h1{
+    font-size: 30px;
+    font-weight: 600;
   }
   .rightbar h3{
     font-size: 20px;
