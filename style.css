@@ -276,8 +276,12 @@ h2{
   text-shadow: 2px 2px 20px rgba(0, 0, 0,5);
 }
 .rightbar{
-  font-family: 'Nunito', sans-serif;
-  font-weight: bolder;
+  transition: transform 0.5s ease;
+  transform: scaleX(1);
+}
+.rightbar h1{
+  transition: transform 0.5s ease;
+  transform: scaleX(1);
 }
 .rightbar h3{
   font-family: 'Nunito', sans-serif;
