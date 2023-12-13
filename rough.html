@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hover-div {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .hover-div::before,
+    .hover-div::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background-color: #3498db;
+      transition: width 0.5s ease;
+      z-index: -1;
+    }
+
+    .hover-div::before {
+      left: 0;
+    }
+
+    .hover-div::after {
+      right: 0;
+    }
+
+    .hover-div:hover::before {
+      width: 100%;
+    }
+
+    .hover-div:hover::after {
+      width: 0;
+    }
+
+    /* Additional styles for content inside the .hover-div */
+    .content {
+      color: #fff;
+      text-align: center;
+      line-height: 200px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hover-div">
+  <div class="content">Hover me</div>
+</div>
+
+</body>
+</html>
