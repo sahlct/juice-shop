@@ -31,7 +31,6 @@ body{
 #home{
    background-image: url(https://img.freepik.com/premium-photo/flat-lay-composition-with-citrus-fruits-leaves-flowers-white-background-copy-space-banner_370312-155.jpg?w=2000); 
    background-size: cover;
-   /* transform: rotate(180deg); */
    min-height: 100vh;
    display: flex;
    flex-wrap: wrap;
@@ -58,7 +57,6 @@ body{
 }
 #gallery{
     background-color: #f7f7f7;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +80,6 @@ h2{
     width: 100%;
     height: 100%;
     border-radius: 9px;
-    /* transition: transform 0.3s ease; */
 }.card-content {
     position: absolute;
     top: -100%;
@@ -96,14 +93,8 @@ h2{
     display: none;
     animation-duration: 0.3s;
     font-family: 'Poppins', sans-serif;
-    /* animation-name: cardreturn;
-    animation-duration: 0.3s; */
-    /* transition: all .2s linear; */
-    /* overflow: hidden; */
   }
-  /* .card:hover img{
-    opacity: 0.2;
-  } */
+
   .card:hover .card-content {
     opacity: 1;
     position: absolute;
@@ -124,7 +115,6 @@ h2{
     animation-name: cardanim;
     animation-duration: 0.3s;
     overflow: hidden;
-    /* transition: top 0.5s ease; */
   }
   .default-text{
     color: black;
@@ -152,11 +142,6 @@ h2{
 .card:hover .card-content button {
   display: block; /* Show new text and button on hover */
 }
-/* .menu-image{
-    max-width: 60px;
-    max-height: 50px;
-    border-radius: 50%;
-} */
 .card1{
     width: 500px;
     height: 80px;
@@ -212,9 +197,7 @@ h2{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 20px 0px 0px 20px;
-    min-width: 250px;
-    width: 50%;
+    border-radius: 20px 20px 20px 20px;
     height: 500px;
     overflow: hidden;
     display: flex;
@@ -222,35 +205,39 @@ h2{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    box-shadow: -10px 20px 37px rgba(0, 0, 0,1);
 }
 .rightbar{
     background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148810353.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702252800&semt=ais);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0px 20px 20px 0px;
-    min-width: 250px;
-    width: 50%;
+    border-radius: 20px 20px 20px 20px;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: -15px 20px 37px rgba(0, 0, 0,1);
 }
-.hour{
-    width: 70%;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-direction: row;
+table{
+  column-gap: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+}
+tr{
+  height: 40px;
 }
 #contact{
     padding: 0;
 }footer{
     margin-top: 50px;
     height: 150px;
-    background-color: rgb(229, 225, 225);
+    background-color: white;
     color: white;
     display: flex;
     justify-content: center;
@@ -271,9 +258,10 @@ h2{
 }
 .leftbar h1{
   color: white;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bolder;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0,5);
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 5px 6px 10px rgba(0, 0, 0,1);
 }
 .rightbar{
   transition: transform 0.5s ease;
@@ -310,7 +298,7 @@ h2{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: rgb(255, 255, 255);
   border-radius: 7px;
   z-index: -1;
   transform-origin: left;
@@ -342,10 +330,6 @@ h2{
     align-self: center;
     
   }
-  .rightbar{
-    align-items: flex-start !important;
-    /* justify-content: space-evenly !important; */
-  }
   .rightbar h3{
     font-size: 20px;
   }
@@ -361,5 +345,15 @@ h2{
   footer a{
     font-size: 15px;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 992px){
+  .leftbar{
+    box-shadow: none;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .rightbar{
+    box-shadow: none;
+    border-radius: 0px 0px 20px 20px;
   }
 }
